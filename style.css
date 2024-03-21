@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #616368;
+  font-size: 16px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.btn-primary {
+  background-color: #2500f9;
+  border-radius: 28.5px;
+  padding: 15px 35px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
