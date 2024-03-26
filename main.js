@@ -43,8 +43,11 @@ const getLastSlide = () => {
 
 const smoothScroll = (event) => {
   event.preventDefault();
+  const openImg = document.getElementById("open-btn-img");
 
   navMenu.classList.add("max-[992px]:translate-x-full");
+  openImg.classList.remove("fa-times");
+  openImg.classList.remove("text-red-600");
 
   const targetId = event.currentTarget.getAttribute("href").substring(0);
   console.log(targetId);
