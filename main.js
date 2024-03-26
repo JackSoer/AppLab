@@ -62,8 +62,8 @@ const fireApp = () => {
   const rightButton = document.getElementById("right");
   const leftImg = document.getElementById("left_img");
   const rightImg = document.getElementById("right_img");
-  const disabledArrow = "./public/assets/images/gray_arrow.png";
-  const anaibledArrow = "./public/assets/images/blue_arrow.png";
+  //   const disabledArrow = "./public/assets/images/gray_arrow.png";
+  //   const anaibledArrow = "./public/assets/images/blue_arrow.png";
   const openMenu = document.querySelector(".nav__open");
   const openImg = document.getElementById("open-btn-img");
 
@@ -74,13 +74,13 @@ const fireApp = () => {
         rightButton.disabled = true;
         rightButton.classList.add("border-2", "border-[#eff3f8]");
         rightButton.classList.remove("bg-[#eff3f8]");
-        rightImg.src = disabledArrow;
+        // rightImg.src = disabledArrow;
         rightImg.style.transform = "rotate(180deg)";
       }
       leftButton.disabled = false;
       leftButton.classList.add("bg-[#eff3f8]");
       leftButton.classList.remove("border-2", "border-[#eff3f8]");
-      leftImg.src = anaibledArrow;
+      //   leftImg.src = anaibledArrow;
       leftImg.style.transform = "rotate(180deg)";
     }
   });
@@ -92,13 +92,13 @@ const fireApp = () => {
         leftButton.disabled = true;
         leftButton.classList.add("border-2", "border-[#eff3f8]");
         leftButton.classList.remove("bg-[#eff3f8]");
-        leftImg.src = disabledArrow;
+        // leftImg.src = disabledArrow;
         leftImg.style.transform = "rotate(0)";
       }
       rightButton.disabled = false;
       rightButton.classList.add("bg-[#eff3f8]");
       rightButton.classList.remove("border-2", "border-[#eff3f8]");
-      rightImg.src = anaibledArrow;
+      //   rightImg.src = anaibledArrow;
       rightImg.style.transform = "rotate(0)";
     }
   });
