@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   color: #616368;
   font-size: 16px;
+}
+
+body,
+html,
+main {
+  overflow-x: hidden;
 }
 
 a {
