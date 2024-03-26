@@ -6,70 +6,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>App Lab</title>
   </head>
   <body>
-    <main>
-      <header
-        class="bg-[#fdfdfe] bg-[url('./public/assets/images/city.png')] bg-no-repeat bg-bottom bg-[length:100vw]"
-      >
-        <div class="container">
-          <nav class="py-7 flex justify-between gap-5 items-center">
-            <a href="#" class="text-[30px] font-bold text-[#fcae61]"
-              ><p>App<span class="text-[#242f51]">Lab</span></p></a
-            >
-            <div class="flex gap-10 items-center">
-              <div>
-                <ul class="flex gap-8 items-center text-[#242f51] btn">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Key Features</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Testiminal</a></li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
-              </div>
-              <a href="#" class="btn-primary">Try for free</a>
-            </div>
-          </nav>
-        </div>
-        <section class="flex items-center justify-center container">
-          <div class="flex flex-col gap-4 max-w-[550px]">
-            <div
-              class="flex items-center gap-2 bg-[#e2eaed] rounded-[17.5px] w-fit pr-10"
-            >
-              <div
-                class="bg-[#feaa25] w-[35px] h-[35px] rounded-[50%] flex items-center justify-center"
+    <header
+      class="bg-[#fdfdfe] bg-no-repeat bg-bottom bg-[length:100vw] header"
+    >
+      <div class="container">
+        <nav class="py-7 flex justify-between gap-5 items-center">
+          <a href="#" class="text-[30px] font-bold text-[#fcae61]"
+            ><p>App<span class="text-[#242f51]">Lab</span></p></a
+          >
+          <button
+            class="nav__open hidden max-[992px]:inline-block relative z-[100]"
+          >
+            <i class="fa fa-bars text-[24px]" id="open-btn-img"></i>
+          </button>
+          <div
+            class="nav__list flex gap-10 items-center max-[992px]:fixed max-[992px]:top-0 max-[992px]:bottom-0 max-[992px]:right-0 max-[992px]:left-0 max-[992px]:bg-[#242f51] max-[992px]:justify-center max-[992px]:flex-col max-[992px]:translate-x-full transition-all max-[992px]:z-50"
+          >
+            <div>
+              <ul
+                class="flex gap-8 items-center text-[#242f51] max-[992px]:text-white max-[992px]:flex-col max-[992px]:text-[20px]"
               >
-                <img src="./public/assets/images/check.png" alt="check" />
-              </div>
-              <div class="text-[#242f51]">#1 Editiors Choice App of 2020</div>
+                <li><a href="#">Home</a></li>
+                <li>
+                  <a href="key-features" class="page-link">Key Features</a>
+                </li>
+                <li><a href="pricing" class="page-link">Pricing</a></li>
+                <li><a href="testiminal" class="page-link">Testiminal</a></li>
+                <li><a href="faq" class="page-link">FAQ</a></li>
+              </ul>
             </div>
-            <h1 class="text-[#242f51] text-[60px] font-semibold leading-[75px]">
-              Best app for your modern lifestyle
-            </h1>
-            <p class="text-[18px]">
-              Increase productivity with a simple to-do app. app for managing
-              your personal budgets.
-            </p>
-            <div class="mt-8">
-              <a href="#" class="btn-primary">Try for free</a
-              ><a href="#" class="text-[#2500f9] ml-8">Watch demo video</a>
+            <a href="#" class="btn-primary">Try for free</a>
+          </div>
+        </nav>
+      </div>
+      <section
+        class="flex items-center justify-center container max-[992px]:flex-col"
+      >
+        <div class="flex flex-col gap-4 max-w-[550px] max-[992px]:items-center">
+          <div
+            class="flex items-center gap-2 bg-[#e2eaed] rounded-[17.5px] w-fit pr-10"
+          >
+            <div
+              class="bg-[#feaa25] w-[35px] h-[35px] rounded-[50%] flex items-center justify-center"
+            >
+              <img src="./public/assets/images/check.png" alt="check" />
+            </div>
+            <div class="text-[#242f51] max-[992px]:text-center">
+              #1 Editiors Choice App of 2020
             </div>
           </div>
-          <div class="pl-14">
-            <img
-              src="./public/assets/images/phone.png"
-              alt="manage statistics"
-            />
+          <h1
+            class="text-[#242f51] text-[60px] font-semibold leading-[75px] max-[992px]:text-center"
+          >
+            Best app for your modern lifestyle
+          </h1>
+          <p class="text-[18px] max-[992px]:text-center">
+            Increase productivity with a simple to-do app. app for managing your
+            personal budgets.
+          </p>
+          <div class="mt-8">
+            <a href="#" class="btn-primary">Try for free</a
+            ><a href="#" class="text-[#2500f9] ml-8">Watch demo video</a>
           </div>
-        </section>
-      </header>
+        </div>
+        <div class="pl-14">
+          <img src="./public/assets/images/phone.png" alt="manage statistics" />
+        </div>
+      </section>
+    </header>
+    <main class="h-fit">
       <section class="flex flex-col gap-6 py-20 items-center mb-8">
         <h5 class="mb-4 text-[#242f51]">Trusted by companies like</h5>
-        <div class="flex items-center gap-[70px]">
+        <div
+          class="flex items-center gap-[70px] flex-wrap px-[15px] justify-center"
+        >
           <img src="./public/assets/images/1_company.png" alt="company_1" /><img
             src="./public/assets/images/2_company.png"
             alt="company_2"
@@ -82,22 +98,28 @@
           /><img src="./public/assets/images/5_company.png" alt="company_5" />
         </div>
       </section>
-      <section class="flex gap-16 container">
-        <div class="bg-[url(./public/assets/images/shape.png)]">
+      <section
+        class="flex gap-16 container max-[992px]:flex-col max-[992px]:items-center max-[992px]:justify-center"
+      >
+        <div
+          class="bg-[url(./public/assets/images/shape.png)] max-[992px]:order-1"
+        >
           <img src="./public/assets/images/phone_2.png" alt="smart search" />
         </div>
         <div class="mt-[55px]">
           <h2
-            class="text-[36px] font-semibold text-[#242f51] max-w-[290px] leading-[46px] mb-[15px]"
+            class="text-[36px] font-semibold text-[#242f51] max-w-[290px] leading-[46px] mb-[15px] max-[992px]:text-center max-[992px]:mx-auto"
           >
             Awesome apps features
           </h2>
-          <p class="max-w-[450px] leading-[26px] mb-[60px]">
+          <p
+            class="max-w-[450px] leading-[26px] mb-[60px] max-[992px]:text-center"
+          >
             Increase productivity with a simple to-do app. app for managing your
             personal budgets.
           </p>
           <div class="flex flex-col gap-14">
-            <div class="flex gap-6 items-center">
+            <div class="flex gap-6 items-center max-[992px]:justify-center">
               <div
                 class="bg-[#ffecef] w-[88px] h-[88px] flex items-center justify-center rounded-[50%]"
               >
@@ -113,7 +135,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-6 items-center">
+            <div class="flex gap-6 items-center max-[992px]:justify-center">
               <div
                 class="bg-[#f4f4ff] w-[88px] h-[88px] flex items-center justify-center rounded-[50%]"
               >
@@ -132,7 +154,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-6 items-center">
+            <div class="flex gap-6 items-center max-[992px]:justify-center">
               <div
                 class="bg-[#e4ffee] w-[88px] h-[88px] flex items-center justify-center rounded-[50%]"
               >
@@ -152,62 +174,80 @@
         </div>
       </section>
       <section class="mb-[100px]">
-        <div class="flex container justify-center items-center !my-[90px]">
+        <div
+          class="flex container justify-center items-center !my-[90px] max-[992px]:flex-col max-[992px]:items-center max-[992px]:!mb-[40px]"
+        >
           <h2
-            class="text-[40px] font-semibold text-[#242f51] max-w-[430px] leading-[50px]"
+            class="text-[40px] font-semibold text-[#242f51] max-w-[430px] leading-[50px] max-[992px]:text-center max-[992px]:mb-7"
           >
             Smart jackpots that you may love this anytime & anywhere
           </h2>
-          <div class="w-[1px] h-[147px] bg-[#bcbbba] mx-[50px]"></div>
-          <p class="max-w-[450px]">
+          <div
+            class="w-[1px] h-[147px] bg-[#bcbbba] mx-[50px] max-[992px]:hidden"
+          ></div>
+          <p class="max-w-[450px] max-[992px]:text-center">
             The rise of mobile devices transforms the way we consume information
             entirely and the world's most elevant channels such as Facebook.
           </p>
         </div>
-        <div class="container flex justify-between !max-w-[970px]">
-          <div class="max-w-[275px]">
+        <div
+          class="container flex justify-between !max-w-[970px] flex-wrap max-[992px]:justify-center max-[992px]:items-center max-[992px]:gap-7"
+        >
+          <div
+            class="max-w-[275px] max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:justify-center"
+          >
             <div
               class="mb-6 w-[88px] h-[88px] rounded-[50%] bg-[#ffecef] flex items-center justify-center pl-2"
             >
               <img src="./public/assets/images/bill.png" alt="bill" />
             </div>
             <div>
-              <h6 class="mb-2 text-[20px] font-semibold text-[#f55767]">
+              <h6
+                class="mb-2 text-[20px] font-semibold text-[#f55767] max-[992px]:text-center"
+              >
                 Automatic Payouts
               </h6>
-              <p>
+              <p class="max-[992px]:text-center">
                 Get your blood tests delivered at home collect a sample from the
                 news your blood tests.
               </p>
             </div>
           </div>
-          <div class="max-w-[275px]">
+          <div
+            class="max-w-[275px] max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:justify-center"
+          >
             <div
               class="mb-6 w-[88px] h-[88px] rounded-[50%] bg-[#f4f4ff] flex items-center justify-center"
             >
               <img src="./public/assets/images/network.png" alt="network" />
             </div>
             <div>
-              <h6 class="mb-2 text-[20px] font-semibold text-[#2563ff]">
+              <h6
+                class="mb-2 text-[20px] font-semibold text-[#2563ff] max-[992px]:text-center"
+              >
                 Network Effect
               </h6>
-              <p>
+              <p class="max-[992px]:text-center">
                 Get your blood tests delivered at home collect a sample from the
                 news your blood tests.
               </p>
             </div>
           </div>
-          <div class="max-w-[275px]">
+          <div
+            class="max-w-[275px] max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center max-[992px]:justify-center"
+          >
             <div
               class="mb-6 w-[88px] h-[88px] rounded-[50%] bg-[#e4ffee] flex items-center justify-center"
             >
               <img src="./public/assets/images/badge.png" alt="badge" />
             </div>
             <div>
-              <h6 class="mb-2 text-[20px] font-semibold text-[#64ab7d]">
+              <h6
+                class="mb-2 text-[20px] font-semibold text-[#64ab7d] max-[992px]:text-center"
+              >
                 Bigger Rewards Method
               </h6>
-              <p>
+              <p class="max-[992px]:text-center">
                 Get your blood tests delivered at home collect a sample from the
                 news your blood tests.
               </p>
@@ -216,20 +256,24 @@
         </div>
       </section>
       <section class="pb-[70px] border-b-2 border-b-[#f5f5f5]">
-        <div class="flex items-center justify-center gap-24 container !w-full">
-          <div>
+        <div
+          class="flex items-center justify-center gap-24 container !w-full max-[992px]:flex-col"
+        >
+          <div class="max-[992px]:order-1">
             <img
               src="./public/assets/images/code_integration.png"
               alt="code_integration"
             />
           </div>
-          <div class="max-w-[420px]">
+          <div
+            class="max-w-[420px] max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center"
+          >
             <h2
-              class="text-[36px] text-[#242f51] font-semibold leading-[46px] mb-7"
+              class="text-[36px] text-[#242f51] font-semibold leading-[46px] mb-7 max-[992px]:text-center"
             >
               Designed & built by the latest code integration
             </h2>
-            <p class="mb-12">
+            <p class="mb-12 max-[992px]:text-center">
               The rise of mobile devices transforms the way we consume
               information entirely and the world's most elevant channels such as
               Facebook.
@@ -250,7 +294,7 @@
         </p>
         <div>
           <div
-            class="flex max-w-[1000px] items-center justify-between mx-auto mb-[60px]"
+            class="flex max-w-[1000px] items-center justify-between mx-auto mb-[60px] flex-wrap max-[992px]:justify-center max-[992px]:gap-[30px]"
           >
             <div class="flex flex-col items-center max-w-[290px]">
               <div
@@ -301,7 +345,9 @@
               </p>
             </div>
           </div>
-          <div class="flex max-w-[1000px] items-center justify-between mx-auto">
+          <div
+            class="flex max-w-[1000px] items-center justify-between mx-auto flex-wrap max-[992px]:justify-center max-[992px]:gap-[30px]"
+          >
             <div class="flex flex-col items-center max-w-[290px]">
               <div
                 class="mb-[30px] h-[88px] w-[88px] rounded-[50%] bg-[#e4ffee] flex items-center justify-center"
@@ -353,20 +399,29 @@
           </div>
         </div>
       </section>
-      <section class="container !pb-[160px] flex items-center">
-        <div>
+      <section
+        class="container !pb-[160px] flex items-center max-[992px]:flex-col"
+        id="key-features"
+      >
+        <div class="max-[992px]:mb-[80px]">
           <h2
-            class="leading-[46px] text-[36px] font-semibold text-[#242f51] mb-[25px] max-w-[330px]"
+            class="leading-[46px] text-[36px] font-semibold text-[#242f51] mb-[25px] max-w-[330px] max-[992px]:text-center max-[992px]:mx-auto"
           >
             Ultimate features that we built
           </h2>
-          <p class="max-w-[400px] text-[#616368] mb-[50px]">
+          <p
+            class="max-w-[400px] text-[#616368] mb-[50px] max-[992px]:text-center max-[992px]:mx-auto"
+          >
             The rise of mobile devices transforms the way we consume information
             entirely.
           </p>
-          <div class="max-w-[640px]">
-            <div class="flex items-center justify-between mx-auto mb-[60px]">
-              <div class="flex flex-col max-w-[290px]">
+          <div
+            class="max-w-[640px] max-[992px]:flex max-[992px]:flex-col max-[992px]:items-center"
+          >
+            <div
+              class="flex items-center justify-between mx-auto mb-[60px] max-[992px]:flex-wrap max-[992px]:gap-[30px] max-[992px]:justify-center"
+            >
+              <div class="flex flex-col max-w-[290px] max-[992px]:items-center">
                 <div
                   class="mb-[30px] h-[88px] w-[88px] rounded-[50%] bg-[#ffecef] flex items-center justify-center"
                 >
@@ -378,12 +433,12 @@
                 <h3 class="text-[20px] font-semibold text-[#242f51] mb-[12px]">
                   App Development
                 </h3>
-                <p>
+                <p class="max-[992px]:text-center">
                   Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </p>
               </div>
-              <div class="flex flex-col max-w-[290px]">
+              <div class="flex flex-col max-w-[290px] max-[992px]:items-center">
                 <div
                   class="mb-[30px] h-[88px] w-[88px] rounded-[50%] bg-[#e4ffee] flex items-center justify-center"
                 >
@@ -392,14 +447,16 @@
                 <h3 class="text-[20px] font-semibold text-[#242f51] mb-[12px]">
                   UX Planning
                 </h3>
-                <p>
+                <p class="max-[992px]:text-center">
                   Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </p>
               </div>
             </div>
-            <div class="flex justify-between mx-auto mb-16">
-              <div class="flex flex-col max-w-[290px]">
+            <div
+              class="flex justify-between mx-auto mb-16 max-[992px]:flex-wrap max-[992px]:gap-[30px] max-[992px]:justify-center"
+            >
+              <div class="flex flex-col max-w-[290px] max-[992px]:items-center">
                 <div
                   class="mb-[30px] h-[88px] w-[88px] rounded-[50%] bg-[#fff6d3] flex items-center justify-center"
                 >
@@ -411,12 +468,12 @@
                 <h3 class="text-[20px] font-semibold text-[#242f51] mb-[12px]">
                   Cloud Storage
                 </h3>
-                <p>
+                <p class="max-[992px]:text-center">
                   Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </p>
               </div>
-              <div class="flex flex-col max-w-[290px]">
+              <div class="flex flex-col max-w-[290px] max-[992px]:items-center">
                 <div
                   class="mb-[30px] h-[88px] w-[88px] rounded-[50%] bg-[#f4f4ff] flex items-center justify-center"
                 >
@@ -428,7 +485,7 @@
                 <h3 class="text-[20px] font-semibold text-[#242f51] mb-[12px]">
                   Customer Support
                 </h3>
-                <p>
+                <p class="max-[992px]:text-center">
                   Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </p>
@@ -437,7 +494,7 @@
             <a href="#" class="btn-primary !px-16">See all</a>
           </div>
         </div>
-        <div class="relative max-w-[664px]">
+        <div class="relative max-w-[664px] max-[992px]:left-[-50px]">
           <img
             src="./public/assets/images/dark_phone.png"
             alt="dark_phone"
@@ -446,7 +503,7 @@
           <img
             src="./public/assets/images/planning_phone.png"
             alt="planning_phone"
-            class="absolute block top-0 right-[-190px] z-20"
+            class="absolute block top-0 right-[-190px] z-20 max-[992px]:right-[-120px]"
           />
           <img
             src="./public/assets/images/ellipse.png"
@@ -455,46 +512,350 @@
           />
         </div>
       </section>
-      <section class="max-w-[580px]">
-        <h2>Get awesome features, without extra charges</h2>
-        <p>
+      <section
+        class="container max-w-[580px] flex flex-col items-center gap-[30px] !pb-[100px]"
+        id="pricing"
+      >
+        <h2
+          class="text-[36px] font-semibold text-[#242f51] max-w-[580px] text-center leading-[46px]"
+        >
+          Get awesome features, without extra charges
+        </h2>
+        <p class="max-w-[640px] text-center mb-[50px]">
           The rise of mobile devices transforms the way we consume information
           entirely and the world's most elevant channels such as Facebook.
         </p>
-        <div><button>Monthly</button><button>Annualy</button></div>
-        <div>
-          <div>
-            <div>
-              <p><span>$0</span>/month</p>
-              <p>Business Class</p>
-              <p>For small teams or office</p>
+        <div class="border-2 border-[#ebebeb] rounded-[28.5px] p-[2px]">
+          <button class="btn-primary">Monthly</button
+          ><button class="px-[35px] py-[15px]">Annualy</button>
+        </div>
+        <div class="flex gap-[40px] justify-center flex-wrap">
+          <div
+            class="w-[317px] shadow-[4px_55px_62px_0px_rgba(144,163,177,0.18)] rounded-[9px] h-fit"
+          >
+            <div class="bg-[#fafcfc] flex flex-col items-center py-[40px]">
+              <p class="text-[18px] text-[#999ca5]">
+                <span class="text-[60px] font-semibold text-[#242f51]">$0</span
+                >/month
+              </p>
+              <p class="text-[20px] text-[#242f51] font-semibold">
+                Business Class
+              </p>
+              <p class="text-[#999ca5]">For small teams or office</p>
             </div>
-            <ul>
-              <li>Drag & Drop Builder</li>
-              <li>1,000's of Templates</li>
-              <li>Blog Support Tools</li>
-              <li>eCommerce Store</li>
-            </ul>
-            <a>Start free trail</a>
+            <div
+              class="pb-[25px] pt-[35px] flex flex-col items-center gap-[35px]"
+            >
+              <ul
+                class="bg-white flex flex-col items-center gap-[25px] text-[#999ca5]"
+              >
+                <li>Drag & Drop Builder</li>
+                <li>1,000's of Templates</li>
+                <li>Blog Support Tools</li>
+                <li>eCommerce Store</li>
+              </ul>
+              <a class="btn-primary !px-[40px]">Start free trail</a>
+            </div>
           </div>
-          <div>
-            <div>
-              <p><span>$99</span>/month</p>
-              <p>Pro Master</p>
-              <p>For Best opportunities</p>
+          <div
+            class="w-[317px] shadow-[4px_55px_62px_0px_rgba(144,163,177,0.18)] rounded-[9px] border-2 border-[#ebebeb]"
+          >
+            <div
+              class="bg-[#fafcfc] flex flex-col items-center py-[40px] rounded-t-[9px]"
+            >
+              <p class="text-[18px] text-[#999ca5]">
+                <span class="text-[60px] font-semibold text-[#242f51]">$99</span
+                >/month
+              </p>
+              <p class="text-[20px] text-[#242f51] font-semibold">Pro Master</p>
+              <p class="text-[#999ca5]">For Best opportunities</p>
             </div>
-            <ul>
-              <li>Drag & Drop Builder</li>
-              <li>1,000's of Templates</li>
-              <li>Blog Support Tools</li>
-              <li>eCommerce Store</li>
-            </ul>
-            <a>Subscribe Now</a>
-            <a>Or Start 14 days trail</a>
+            <div
+              class="pb-[20px] pt-[35px] flex flex-col items-center gap-[35px]"
+            >
+              <ul
+                class="bg-white flex flex-col items-center gap-[25px] text-[#999ca5]"
+              >
+                <li>Drag & Drop Builder</li>
+                <li>1,000's of Templates</li>
+                <li>Blog Support Tools</li>
+                <li>eCommerce Store</li>
+              </ul>
+              <div class="flex flex-col items-center">
+                <a class="btn-primary !px-[40px] mb-[20px]">Subscribe Now</a>
+                <a class="text-[#2500f9]">Or Start 14 days trail</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <div class="bg-[#f5f5f5] h-[2px] w-[100%]"></div>
+      <section
+        class="py-[150px] flex max-w-[1610px] mx-auto max-[992px]:flex-col max-[992px]:items-center"
+        id="testiminal"
+      >
+        <div class="relative w-fit mt-auto max-[992px]:order-1">
+          <img src="./public/assets/images/map.png" alt="map" /><img
+            class="absolute top-[90px] left-[37px]"
+            src="./public/assets/images/avatar_1.png"
+            alt="avatar"
+          /><img
+            src="./public/assets/images/avatar_2.png"
+            alt="avatar"
+            class="absolute top-[250px] left-[50px]"
+          /><img
+            src="./public/assets/images/avatar_3.png"
+            alt="avatar"
+            class="absolute top-[380px] left-[230px]"
+          /><img
+            src="./public/assets/images/avatar_4.png"
+            alt="avatar"
+            class="absolute top-[-15px] left-[260px]"
+          /><img
+            src="./public/assets/images/avatar_5.png"
+            alt="avatar"
+            class="absolute top-[175px] left-[280px]"
+          /><img
+            src="./public/assets/images/avatar_6.png"
+            alt="avatar"
+            class="absolute top-[250px] left-[490px]"
+          /><img
+            src="./public/assets/images/avatar_7.png"
+            alt="avatar"
+            class="absolute top-[30px] right-[150px]"
+          />
+        </div>
+        <div class="flex flex-col gap-[20px]">
+          <div class="max-w-[490px]">
+            <h2
+              class="text-[40px] font-semibold text-[#242f51] leading-[50px] mb-[20px]"
+            >
+              Meet Client Satisfaction by using product
+            </h2>
+            <p class="mb-[10px]">
+              The rise of mobile devices transforms the way we consume. elevant
+              channels such as Facebook.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./public/assets/images/star_star_star_star_star.png"
+              alt="stars"
+            />
+          </div>
+          <h4 class="text-[20px] font-semibold text-[#242f51]">
+            User friendly & Customizable
+          </h4>
+          <p class="max-w-[580px] mb-[40px]">
+            Bring to the table win-win survival strategies to ensure proactive
+            domination. At the end of the day, going forward, a new normal that
+            has evolved from generation X is on the runway heading towards a
+            streamlined cloud solution. User generated content in real-time will
+            have multiple touchpoints for offshoring.
+          </p>
+          <div
+            class="flex items-center justify-between max-[992px]:mb-[30px] max-[992px]:flex-col"
+          >
+            <div class="overflow-hidden max-w-[270px]">
+              <div class="drag__slide">
+                <div
+                  class="flex items-center gap-[25px] drag__slider-desc w-full h-full"
+                >
+                  <div>
+                    <img src="./public/assets/images/zoltan.png" alt="avatar" />
+                  </div>
+                  <div>
+                    <h5
+                      class="text-[18px] font-semibold text-[#242f51] mb-[2px]"
+                    >
+                      Zoltan Nemeth
+                    </h5>
+                    <p class="text-[18px]">CEO of Pixler Lab</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-[25px] drag__slider-desc w-full h-full"
+                >
+                  <div>
+                    <img src="./public/assets/images/zoltan.png" alt="avatar" />
+                  </div>
+                  <div>
+                    <h5
+                      class="text-[18px] font-semibold text-[#242f51] mb-[2px]"
+                    >
+                      Zoltan Nemeth
+                    </h5>
+                    <p class="text-[18px]">CEO of Pixler Lab</p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-[25px] drag__slider-desc w-full h-full"
+                >
+                  <div>
+                    <img src="./public/assets/images/zoltan.png" alt="avatar" />
+                  </div>
+                  <div>
+                    <h5
+                      class="text-[18px] font-semibold text-[#242f51] mb-[2px]"
+                    >
+                      Zoltan Nemeth
+                    </h5>
+                    <p class="text-[18px]">CEO of Pixler Lab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-[9px]">
+              <button
+                class="w-[50px] h-[50px] rounded-[50%] border-2 border-[#eff3f8] flex items-center justify-center"
+                id="left"
+                disabled
+              >
+                <img
+                  src="./public/assets/images/gray_arrow.png"
+                  alt="prev"
+                  id="left_img"
+                />
+              </button>
+              <div class="w-[1px] h-[25px] bg-[#e7e7e7]"></div>
+              <button
+                class="w-[50px] h-[50px] rounded-[50%] bg-[#eff3f8] flex items-center justify-center"
+                id="right"
+              >
+                <img
+                  src="./public/assets/images/blue_arrow.png"
+                  alt="next"
+                  id="right_img"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container !pb-[100px] !pt-[30px] flex flex-col items-center"
+        id="faq"
+      >
+        <h2 class="text-[40px] text-[#242f51] font-semibold mb-[20px]">
+          Frequently asked questions
+        </h2>
+        <p class="max-w-[650px] text-center mb-[55px]">
+          The rise of mobile devices transforms the way we consume information
+          entirely and the world's most elevant channels such as Facebook.
+        </p>
+        <div class="max-w-[950px] flex flex-col gap-[12px]">
+          <div class="bg-[#f5f7fa] p-[50px]">
+            <h4 class="subtitle !font-semibold mb-[30px]">
+              How to contact with riders emergency?
+            </h4>
+            <p>
+              Leverage agile frameworks to provide a robust synopsis for high
+              level overviews. Iterative approaches to corporate strategy foster
+              collaborative thinking to further the overall value proposition.
+              Organically grow the holistic world view of disruptive innovation
+              via workplace diversity and empowerment.
+            </p>
+          </div>
+          <div
+            class="bg-[#f5f7fa] p-[50px] !py-[20px] flex items-center justify-between"
+          >
+            <h4 class="subtitle">
+              App installation failed, how to update system information?
+            </h4>
+            <button>
+              <img src="./public/assets/images/plus.png" alt="plus" />
+            </button>
+          </div>
+          <div
+            class="bg-[#f5f7fa] p-[50px] !py-[20px] flex items-center justify-between"
+          >
+            <h4 class="subtitle">
+              Website reponse taking time, how to improve?
+            </h4>
+            <button>
+              <img src="./public/assets/images/plus.png" alt="plus" />
+            </button>
+          </div>
+          <div
+            class="bg-[#f5f7fa] p-[50px] !py-[20px] flex items-center justify-between"
+          >
+            <h4 class="subtitle">New update fixed all bug and issues</h4>
+            <button>
+              <img src="./public/assets/images/plus.png" alt="plus" />
+            </button>
+          </div>
+          <div
+            class="bg-[#f5f7fa] p-[50px] !py-[20px] flex items-center justify-between"
+          >
+            <h4 class="subtitle">How to contact with riders emergency?</h4>
+            <button>
+              <img src="./public/assets/images/plus.png" alt="plus" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="bg-[#f5f5f5] h-[2px] w-[100%]"></div>
+      <section class="flex items-center max-w-[1600px] justify-center mx-auto">
+        <div>
+          <h2 class="text-[48px] font-semibold text-[#242f51] mb-[15px]">
+            Download our App now !
+          </h2>
+          <p class="max-w-[640px] mb-[40px]">
+            The rise of mobile devices transforms the way we consume information
+            entirely and the world's most elevant channels such as Facebook.
+          </p>
+          <div class="flex items-center gap-[30px]">
+            <a href="">
+              <img
+                src="./public/assets/images/google_play.png"
+                alt="google play"
+              /> </a
+            ><a href="">
+              <img
+                src="./public/assets/images/download_on_the_app_store_apple.png"
+                alt="app store"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="ml-[-100px] relative top-[50px]">
+          <img src="./public/assets/images/download_now.png" alt="" />
+        </div>
+      </section>
     </main>
+    <footer
+      class="bg-[#09142e] flex flex-col gap-[50px] py-[100px] text-center"
+    >
+      <div>
+        <a href="#" class="text-[30px] font-bold text-[#fcae61]"
+          ><p>App<span class="text-[#242f51]">Lab</span></p></a
+        >
+      </div>
+      <div>
+        <ul class="flex gap-8 items-center justify-center text-white">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="key-features" class="page-link">Key Features</a>
+          </li>
+          <li><a href="pricing" class="page-link">Pricing</a></li>
+          <li><a href="testiminal" class="page-link">Testiminal</a></li>
+          <li><a href="faq" class="page-link">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="text-[#273043] text-[30px]">
+        <a href=""> <i class="fa-brands fa-facebook-f"></i> </a
+        ><a href=""> <i class="fa-brands fa-twitter"></i> </a
+        ><a href=""><i class="fa-solid fa-hashtag text-white"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+      </div>
+      <p class="text-[#343d52]">
+        Copyright© Arifur Rahman Tushar 2019. All rights reserved
+      </p>
+    </footer>
     <script type="module" src="/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/36c5e7410a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

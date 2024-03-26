@@ -6,6 +6,11 @@ body {
   font-family: "Poppins", sans-serif;
   color: #616368;
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
 }
 
 .container {
@@ -20,11 +25,24 @@ body {
   color: #ffffff;
 }
 
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #242f51;
+}
+
+.drag__slide {
+  display: flex;
+  align-items: center;
+  transition: all 1s ease;
+  width: 810px;
+}
+
 @media (min-width: 575.98px) {
   .container {
     max-width: 540px;
     margin: 0 auto;
-    padding: 0;
+    padding: 15px;
   }
 }
 
@@ -37,6 +55,12 @@ body {
 @media (min-width: 991.98px) {
   .container {
     max-width: 960px;
+  }
+
+  .header {
+    background: url("./public/assets/images/purple.png") no-repeat 140px 130px,
+      url("./public/assets/images/circles.png") no-repeat 140px 90px,
+      url("./public/assets/images/city.png") no-repeat bottom center;
   }
 }
 
