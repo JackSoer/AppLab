@@ -45,9 +45,12 @@ const smoothScroll = (event) => {
   event.preventDefault();
   const openImg = document.getElementById("open-btn-img");
 
-  navMenu.classList.add("max-[992px]:translate-x-full");
+  navMenu.classList.add("max-[1200px]:translate-x-full");
   openImg.classList.remove("fa-times");
   openImg.classList.remove("text-red-600");
+  document.body.classList.remove("h-screen");
+  document.body.classList.remove("w-screen");
+  document.body.classList.remove("overflow-y-hidden");
 
   const targetId = event.currentTarget.getAttribute("href").substring(0);
   console.log(targetId);
@@ -69,6 +72,8 @@ const fireApp = () => {
   //   const anaibledArrow = "./public/assets/images/blue_arrow.png";
   const openMenu = document.querySelector(".nav__open");
   const openImg = document.getElementById("open-btn-img");
+  const accBtns = document.querySelectorAll(".acc-btn");
+  const accs = document.querySelectorAll(".acc");
 
   rightButton.addEventListener("click", () => {
     if (slideNumber < length) {
@@ -111,9 +116,30 @@ const fireApp = () => {
   );
 
   openMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("max-[992px]:translate-x-full");
+    navMenu.classList.toggle("max-[1200px]:translate-x-full");
     openImg.classList.toggle("fa-times");
     openImg.classList.toggle("text-red-600");
+    document.body.classList.toggle("h-screen");
+    document.body.classList.toggle("w-screen");
+    document.body.classList.toggle("overflow-y-hidden");
+  });
+
+  accs.forEach((acc) => {
+    const button = acc.querySelector("button");
+    const header = acc.querySelector("h4");
+    const p = acc.nextElementSibling;
+
+    button.addEventListener("click", (e) => {
+      const img = button.querySelector("img");
+      const i = button.querySelector("div");
+
+      p.classList.toggle("h-0");
+      p.classList.toggle("opacity-0");
+      p.classList.toggle("mt-4");
+      header.classList.toggle("!font-semibold");
+      img.classList.toggle("hidden");
+      i.classList.toggle("hidden");
+    });
   });
 
   //   closeMenu.addEventListener("click", () => {

@@ -9,8 +9,7 @@ body {
 }
 
 body,
-html,
-main {
+html {
   overflow-x: hidden;
 }
 
@@ -25,7 +24,11 @@ a {
 .btn-primary {
   background-color: #2500f9;
   border-radius: 28.5px;
-  padding: 15px 35px;
+  width: 170px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   color: #ffffff;
 }
@@ -63,14 +66,14 @@ a {
   }
 
   .header {
-    background: url("./public/assets/images/purple.png") no-repeat 140px 130px,
-      url("./public/assets/images/circles.png") no-repeat 140px 90px,
+    background: url("./public/assets/images/purple.png") no-repeat 140px 160px,
+      url("./public/assets/images/circles.png") no-repeat 131px 118px,
       url("./public/assets/images/city.png") no-repeat bottom center;
   }
 }
 
 @media (min-width: 1199.98px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
