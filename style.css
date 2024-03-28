@@ -66,9 +66,7 @@ a {
   }
 
   .header {
-    background: url("./public/assets/images/purple.png") no-repeat 140px 160px,
-      url("./public/assets/images/circles.png") no-repeat 131px 118px,
-      url("./public/assets/images/city.png") no-repeat bottom center;
+    background: url("./public/assets/images/city.png") no-repeat bottom center;
   }
 }
 
