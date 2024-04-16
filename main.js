@@ -76,13 +76,13 @@ const fireApp = () => {
 
       if (slideNumber === length) {
         rightButton.disabled = true;
-        rightButton.classList.add("border-2", "border-[#eff3f8]");
-        rightButton.classList.remove("bg-[#eff3f8]");
+        rightButton.classList.add("border-2", "border-gray-400");
+        rightButton.classList.remove("bg-gray-400");
       }
 
       leftButton.disabled = false;
-      leftButton.classList.add("bg-[#eff3f8]");
-      leftButton.classList.remove("border-2", "border-[#eff3f8]");
+      leftButton.classList.add("bg-gray-400");
+      leftButton.classList.remove("border-2", "border-gray-400");
     }
   });
 
@@ -92,13 +92,13 @@ const fireApp = () => {
 
       if (slideNumber === 1) {
         leftButton.disabled = true;
-        leftButton.classList.add("border-2", "border-[#eff3f8]");
-        leftButton.classList.remove("bg-[#eff3f8]");
+        leftButton.classList.add("border-2", "border-gray-400");
+        leftButton.classList.remove("bg-gray-400");
       }
 
       rightButton.disabled = false;
-      rightButton.classList.add("bg-[#eff3f8]");
-      rightButton.classList.remove("border-2", "border-[#eff3f8]");
+      rightButton.classList.add("bg-gray-400");
+      rightButton.classList.remove("border-2", "border-gray-400");
     }
   });
 
@@ -132,10 +132,6 @@ const fireApp = () => {
       i.classList.toggle("hidden");
     });
   });
-
-  //   closeMenu.addEventListener("click", () => {
-  //     navMenu.classList.remove("nav__list--active");
-  //   });
 };
 
 fireApp();
