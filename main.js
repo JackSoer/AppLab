@@ -66,48 +66,39 @@ const fireApp = () => {
   const pricingLinks = document.querySelectorAll(".page-link");
   const leftButton = document.getElementById("left");
   const rightButton = document.getElementById("right");
-  //   const leftImg = document.getElementById("left_img");
-  //   const rightImg = document.getElementById("right_img");
-  //   const disabledArrow = "./public/assets/images/gray_arrow.png";
-  //   const anaibledArrow = "./public/assets/images/blue_arrow.png";
   const openMenu = document.querySelector(".nav__open");
   const openImg = document.getElementById("open-btn-img");
-  const accBtns = document.querySelectorAll(".acc-btn");
   const accs = document.querySelectorAll(".acc");
 
   rightButton.addEventListener("click", () => {
     if (slideNumber < length) {
       nextSlide();
+
       if (slideNumber === length) {
         rightButton.disabled = true;
         rightButton.classList.add("border-2", "border-[#eff3f8]");
         rightButton.classList.remove("bg-[#eff3f8]");
-        // rightImg.src = disabledArrow;
-        // rightImg.style.transform = "rotate(180deg)";
       }
+
       leftButton.disabled = false;
       leftButton.classList.add("bg-[#eff3f8]");
       leftButton.classList.remove("border-2", "border-[#eff3f8]");
-      //   leftImg.src = anaibledArrow;
-      //   leftImg.style.transform = "rotate(180deg)";
     }
   });
 
   leftButton.addEventListener("click", () => {
     if (slideNumber > 1) {
       prevSlide();
+
       if (slideNumber === 1) {
         leftButton.disabled = true;
         leftButton.classList.add("border-2", "border-[#eff3f8]");
         leftButton.classList.remove("bg-[#eff3f8]");
-        // leftImg.src = disabledArrow;
-        // leftImg.style.transform = "rotate(0)";
       }
+
       rightButton.disabled = false;
       rightButton.classList.add("bg-[#eff3f8]");
       rightButton.classList.remove("border-2", "border-[#eff3f8]");
-      //   rightImg.src = anaibledArrow;
-      //   rightImg.style.transform = "rotate(0)";
     }
   });
 
@@ -116,7 +107,7 @@ const fireApp = () => {
   );
 
   openMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("max-[1200px]:translate-x-full");
+    navMenu.classList.toggle("xl:translate-x-full");
     openImg.classList.toggle("fa-times");
     openImg.classList.toggle("text-red-600");
     document.body.classList.toggle("h-screen");

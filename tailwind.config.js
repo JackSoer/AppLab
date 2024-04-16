@@ -126,8 +126,7 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: "0 15px",
-        "container-sm": "15px",
+        DEFAULT: "15px",
       },
       screens: {
         "container-sm": "540px",
