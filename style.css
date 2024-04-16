@@ -2,76 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Poppins", sans-serif;
-  color: #616368;
-  font-size: 16px;
-}
-
-body,
-html {
-  overflow-x: hidden;
-}
-
-a {
-  cursor: pointer;
-}
-
-.container {
-  padding: 0 15px;
-}
-
-.btn-primary {
-  background-color: #2500f9;
-  border-radius: 28.5px;
-  width: 170px;
-  height: 57px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  color: #242f51;
-}
-
-.drag__slide {
-  display: flex;
-  align-items: center;
-  transition: all 1s ease;
-  width: 810px;
-}
-
-@media (min-width: 575.98px) {
-  .container {
-    max-width: 540px;
-    margin: 0 auto;
-    padding: 15px;
+@layer base {
+  a {
+    @apply cursor-pointer;
   }
 }
 
-@media (min-width: 767.98px) {
-  .container {
-    max-width: 720px;
+@layer components {
+  .btn-primary {
+    @apply bg-darkBlue rounded-4xl w-42 h-14 flex items-center justify-center font-bold text-white;
   }
-}
 
-@media (min-width: 991.98px) {
-  .container {
-    max-width: 960px;
+  .subtitle {
+    @apply text-xl font-medium text-darkPurple;
+  }
+
+  .drag__slide {
+    @apply flex items-center w-mlg transition-all !duration-1000 !ease-linear;
   }
 
   .header {
     background: url("./public/assets/images/city.png") repeat-x bottom center;
-  }
-}
-
-@media (min-width: 1199.98px) {
-  .container {
-    max-width: 1200px;
   }
 }
